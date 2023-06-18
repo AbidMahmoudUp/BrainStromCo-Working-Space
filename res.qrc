@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/background login.png</file>
+        <file>img/bookmark_add_black_24dp.svg</file>
+        <file>img/bookmark_added_black_24dp.svg</file>
+        <file>img/delete_black_24dp.svg</file>
+        <file>img/done_black_24dp.svg</file>
+        <file>img/edit_black_24dp.svg</file>
+        <file>img/edit_off_black_24dp.svg</file>
+        <file>img/favorite_black_24dp (1).svg</file>
+        <file>img/favorite_black_24dp.svg</file>
+        <file>img/favorite_border_black_24dp.svg</file>
+        <file>img/home_black_24dp.svg</file>
+        <file>img/https_black_24dp.svg</file>
+        <file>img/lock_clock_black_24dp.svg</file>
+        <file>img/logout_black_24dp.svg</file>
+        <file>img/manage_accounts_black_24dp.svg</file>
+        <file>img/search_black_24dp.svg</file>
+        <file>img/search_off_black_24dp.svg</file>
+        <file>img/settings_black_24dp.svg</file>
+        <file>img/toc_black_24dp.svg</file>
+        <file>img/trending_up_black_24dp.svg</file>
+        <file>img/verified_black_24dp.svg</file>
+        <file>img/visibility_black_24dp.svg</file>
+        <file>img/visibility_off_black_24dp.svg</file>
+        <file>img/alternate_email_black_24dp.svg</file>
+        <file>img/alternate_email_black_24dp.png</file>
+        <file>img/alternate_email_blue.png</file>
+        <file>img/visibility.png</file>
+        <file>img/visibilityOff.png</file>
+        <file>img/email_blue.png</file>
+        <file>img/email_grey.png</file>
+        <file>img/phone_blue.png</file>
+        <file>img/phone_grey.png</file>
+    </qresource>
+</RCC>
