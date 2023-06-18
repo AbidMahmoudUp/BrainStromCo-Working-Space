@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#LoginButton:hover{
+text-decoration: underline;
+font-weight:bold;
+}
+QPushButton#add_office_button:hover{
+font-weight:bold;
+}
+
+QPushButton#LoginButton:hover{
+text-decoration: underline;
+font-weight:bold;
+}
+
+QPushButton#add_office_btn:hover{
+font-weight: 550;
+}
+
+QLineEdit#Username:focus{
+border:none;
+border-bottom: 1.5px solid #4A8292;
+}
+
+QLineEdit.password:active{
+border:none;
+border-bottom: 1.5px solid #4A8292;
+}
+
+QPushButton#SingUpBtn:hover{
+border:none;
+border-bottom: 1.5px solid #628D99;}
+QPushButton#SingUpBtn_3:hover{
+border:none;
+border-bottom: 1.5px solid #628D99
+}
+QPushButton#SingUpBtn_2:hover{
+text-decoration: underline;
+font-weight:bold;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="mainWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1366</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Light</family>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="Login">
+     <property name="styleSheet">
+      <string notr="true">background-color:#97BDC8</string>
+     </property>
+     <widget class="QStackedWidget" name="loginSTKWidgetForm">
+      <property name="geometry">
+       <rect>
+        <x>255</x>
+        <y>171</y>
+        <width>856</width>
+        <height>425</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;
+border-radius:30px;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>-1</y>
+          <width>428</width>
+          <height>425</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/img/img/background login.png);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>281</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>19</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#454545;
+</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string>Brain Storm
+Co-working Space</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QStackedWidget" name="loginForm">
+        <property name="geometry">
+         <rect>
+          <x>426</x>
+          <y>0</y>
+          <width>431</width>
+          <height>425</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QWidget" name="page_4">
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>137</x>
+            <y>370</y>
+            <width>131</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Create new account?</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="LoginButton">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>310</y>
+            <width>75</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white;
+border-radius:8px;
+background-color: #4A8292;
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>40</y>
+            <width>161</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>22</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight:bold;
+color:#454545;</string>
+          </property>
+          <property name="text">
+           <string>Sing In</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Username">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>170</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>Username</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="password">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>240</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Password</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="SingUpBtn">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>366</y>
+            <width>51</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#628D99;
+font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>Sing Up</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="usernameIconeGrey">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>170</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">width:16px;
+  
+height: 16px;  </string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/alternate_email_black_24dp.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="visibilityBtn">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>240</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(&quot;C:/Users/Mon Pc/Desktop/Qt projects/BrainStormSpace/img/visibilityOff.png&quot;);
+background-repeat: no-repeat;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox">
+          <property name="geometry">
+           <rect>
+            <x>315</x>
+            <y>314</y>
+            <width>51</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <zorder>checkBox</zorder>
+         <zorder>label</zorder>
+         <zorder>LoginButton</zorder>
+         <zorder>label_3</zorder>
+         <zorder>Username</zorder>
+         <zorder>password</zorder>
+         <zorder>SingUpBtn</zorder>
+         <zorder>usernameIconeGrey</zorder>
+         <zorder>visibilityBtn</zorder>
+        </widget>
+        <widget class="QWidget" name="page_5">
+         <widget class="QLineEdit" name="Username_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>140</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>Username</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>40</y>
+            <width>161</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>22</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight:bold;
+color:#454545;</string>
+          </property>
+          <property name="text">
+           <string>Sing UP</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="SingUpBtn_2">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>340</y>
+            <width>75</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white;
+border-radius:8px;
+background-color: #4A8292;
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>Sign Up</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="visibilityBtn_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>190</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(&quot;C:/Users/Mon Pc/Desktop/Qt projects/BrainStormSpace/img/visibilityOff.png&quot;);
+background-repeat: no-repeat;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="password_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>190</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Password</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="usernameIcone_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>140</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">width:16px;
+  
+height: 16px;  </string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/alternate_email_black_24dp.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="email_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>240</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>Email</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="emailIcone_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>240</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">width:16px;
+  
+height: 16px;  </string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/email_grey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="numberIcone_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>290</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">width:16px;
+  
+height: 16px;  </string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/phone_grey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="number_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>290</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>Phone Number</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox_SingUp">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>340</y>
+            <width>21</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>380</y>
+            <width>221</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Do you have allready an account ?</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="SingUpBtn_3">
+          <property name="geometry">
+           <rect>
+            <x>223</x>
+            <y>375</y>
+            <width>51</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#628D99;
+font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>Sign In</string>
+          </property>
+         </widget>
+         <zorder>checkBox_SingUp</zorder>
+         <zorder>Username_SingUp</zorder>
+         <zorder>label_4</zorder>
+         <zorder>SingUpBtn_2</zorder>
+         <zorder>password_SingUp</zorder>
+         <zorder>usernameIcone_SingUp</zorder>
+         <zorder>visibilityBtn_SingUp</zorder>
+         <zorder>email_SingUp</zorder>
+         <zorder>emailIcone_SingUp</zorder>
+         <zorder>number_SingUp</zorder>
+         <zorder>numberIcone_SingUp</zorder>
+         <zorder>label_2</zorder>
+         <zorder>SingUpBtn_3</zorder>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>230</width>
+        <height>768</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#222E3C;</string>
+      </property>
+      <widget class="QWidget" name="page_6">
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>191</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lucida Sans</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;</string>
+        </property>
+        <property name="text">
+         <string>Dashboard</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI Light</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white</string>
+        </property>
+        <property name="text">
+         <string>Pages</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Office_Btn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>98</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;color:white;text-align:left;padding-left:50px;</string>
+        </property>
+        <property name="text">
+         <string>Office Mangement</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="BackgroundOM">
+        <property name="geometry">
+         <rect>
+          <x>-3</x>
+          <y>99</y>
+          <width>230</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/under_menu_text.svg</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Reservation_Btn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>208</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI Light</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;color:white;text-align:left;padding-left:50px;</string>
+        </property>
+        <property name="text">
+         <string>Reservation Mangement</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="BackgroundRM">
+        <property name="geometry">
+         <rect>
+          <x>-3</x>
+          <y>209</y>
+          <width>230</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/under_menu_text.svg</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="office_icone">
+        <property name="geometry">
+         <rect>
+          <x>23</x>
+          <y>105</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/officeUsed.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Reservation_Icone">
+        <property name="geometry">
+         <rect>
+          <x>23</x>
+          <y>215</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/reservation_unused.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Display_offices_Btn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>140</y>
+          <width>231</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;
+color:white;
+text-align:left;
+padding-left:70px;</string>
+        </property>
+        <property name="text">
+         <string>Display Offices</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="display_offices_icone">
+        <property name="geometry">
+         <rect>
+          <x>44</x>
+          <y>143</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/display_iconeUsed.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="statistics_offices_icone">
+        <property name="geometry">
+         <rect>
+          <x>44</x>
+          <y>177</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/statistics_iconeUnused.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Statistics_offices_Btn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>175</y>
+          <width>231</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI Light</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;
+color:white;
+text-align:left;
+padding-left:70px;</string>
+        </property>
+        <property name="text">
+         <string>Statistics</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>label_5</zorder>
+       <zorder>label_6</zorder>
+       <zorder>BackgroundOM</zorder>
+       <zorder>BackgroundRM</zorder>
+       <zorder>office_icone</zorder>
+       <zorder>Office_Btn</zorder>
+       <zorder>Reservation_Icone</zorder>
+       <zorder>Reservation_Btn</zorder>
+       <zorder>Display_offices_Btn</zorder>
+       <zorder>display_offices_icone</zorder>
+       <zorder>statistics_offices_icone</zorder>
+       <zorder>Statistics_offices_Btn</zorder>
+      </widget>
+      <widget class="QWidget" name="page_7"/>
+     </widget>
+     <widget class="QStackedWidget" name="TopBarreSTCK">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>1136</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#FFFFFF;
+</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QWidget" name="page_8"/>
+      <widget class="QWidget" name="page_9"/>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>-150</y>
+        <width>1136</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="res.qrc">:/img/img/shadow.svg</pixmap>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="body">
+      <property name="geometry">
+       <rect>
+        <x>229</x>
+        <y>59</y>
+        <width>1138</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_10">
+       <widget class="QPushButton" name="add_office_btn">
+        <property name="geometry">
+         <rect>
+          <x>1070</x>
+          <y>20</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:transparent;
+padding-bottom:6px;
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="background_add_office_btn">
+        <property name="geometry">
+         <rect>
+          <x>1070</x>
+          <y>20</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/blue_circle.png</pixmap>
+        </property>
+       </widget>
+       <zorder>background_add_office_btn</zorder>
+       <zorder>add_office_btn</zorder>
+      </widget>
+      <widget class="QWidget" name="page_11">
+       <widget class="QFrame" name="QlineStatOffice">
+        <property name="geometry">
+         <rect>
+          <x>399</x>
+          <y>10</y>
+          <width>721</width>
+          <height>293</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QWidget" name="earningStatOffice" native="true">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>29</y>
+          <width>181</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:white;
+border-radius:5px;</string>
+        </property>
+        <widget class="QLabel" name="EarningsText">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>8</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Earnings</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="earning_sum">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>101</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>$21.000</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="earning_pourcetage">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>49</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#129B51;</string>
+         </property>
+         <property name="text">
+          <string>6.5%</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>89</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Since last week</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>141</x>
+           <y>8</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res.qrc">:/img/img/dollar_icon.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="reclamationStatOffice" native="true">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>29</y>
+          <width>181</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:white;
+border-radius:5px;</string>
+        </property>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>8</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Reclamation</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Reclamation_number">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>110</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>10</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="reclamation_pourcenetage">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#D84052</string>
+         </property>
+         <property name="text">
+          <string>-3.5%</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>44</x>
+           <y>90</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Since last week</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>141</x>
+           <y>8</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res.qrc">:/img/img/reclamtion_icone.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="availabiliyStatOffice" native="true">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>162</y>
+          <width>181</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:white;
+border-radius:5px;</string>
+        </property>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>8</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Availability</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>110</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>14.212</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="earning_pourcetage_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>49</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#129B51;</string>
+         </property>
+         <property name="text">
+          <string>6.5%</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>89</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Since last week</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>141</x>
+           <y>8</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res.qrc">:/img/img/tick_icone.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="chargeStatOffice" native="true">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>162</y>
+          <width>181</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:white;
+border-radius:5px;</string>
+        </property>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>8</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Charge</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>110</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>14.212</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>89</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#686A72;</string>
+         </property>
+         <property name="text">
+          <string>Since last week</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="earning_pourcetage_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>49</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#129B51;
+background:transparent;</string>
+         </property>
+         <property name="text">
+          <string>6.5%</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>141</x>
+           <y>8</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res.qrc">:/img/img/charge_icone.png</pixmap>
+         </property>
+        </widget>
+        <zorder>label_16</zorder>
+        <zorder>earning_pourcetage_3</zorder>
+        <zorder>label_17</zorder>
+        <zorder>label_15</zorder>
+        <zorder>label_20</zorder>
+       </widget>
+       <widget class="QFrame" name="QPieStatOffice">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>310</y>
+          <width>491</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>QlineStatOffice</zorder>
+       <zorder>reclamationStatOffice</zorder>
+       <zorder>availabiliyStatOffice</zorder>
+       <zorder>earningStatOffice</zorder>
+       <zorder>chargeStatOffice</zorder>
+       <zorder>QPieStatOffice</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="add_office_widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1366</width>
+        <height>786</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="blur">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1366</width>
+         <height>786</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="res.qrc">:/img/img/blur.svg</pixmap>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="popup_stacked_widget">
+       <property name="geometry">
+        <rect>
+         <x>229</x>
+         <y>59</y>
+         <width>1111</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page_12">
+        <widget class="QWidget" name="widget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>90</y>
+           <width>441</width>
+           <height>370</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:white;
+border-radius:10px;</string>
+         </property>
+         <widget class="QLineEdit" name="office_Name_line">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>60</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+border-radius:unset;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Office Name</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="space_line">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>110</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+border-radius:unset;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Space</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="position_line">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>160</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+border-radius:unset;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Position</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="description_line">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>260</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+border-radius:unset;</string>
+          </property>
+          <property name="placeholderText">
+           <string>description</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="add_office_button">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>310</y>
+            <width>64</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+background-color:#92B4E2;
+color:white;</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Price_line">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>210</y>
+            <width>341</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;
+border-bottom: 1.5px solid #d9d9d9;
+border-radius:unset;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Price</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="officeName_icone">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>60</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/nameOffice_iconeGrey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="space_icone">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>110</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/space_iconeGrey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="position_icone">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>160</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/position_iconeGrey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="price_icone">
+          <property name="geometry">
+           <rect>
+            <x>372</x>
+            <y>210</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/dollar_iconeGrey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="description_icone">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>260</y>
+            <width>17</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/img/img/description_iconeGrey.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="exit_add_popup">
+          <property name="geometry">
+           <rect>
+            <x>217</x>
+            <y>15</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(&quot;C:/Users/Mon Pc/Desktop/Qt projects/BrainStormSpace/img/exit_x_icon.png&quot;);
+background-repeat:no-repeat;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_13"/>
+      </widget>
+     </widget>
+     <zorder>stackedWidget</zorder>
+     <zorder>label_7</zorder>
+     <zorder>TopBarreSTCK</zorder>
+     <zorder>body</zorder>
+     <zorder>add_office_widget</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
